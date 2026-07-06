@@ -1,0 +1,682 @@
+/* ================================
+RESET: =========================
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-size: var(--fs-p);
+    font-family: var(--font-text);
+    overflow-x: hidden;
+  }
+
+/* ============================ /* ============================ 
+/* ============================ /* ============================ 
+
+/* Celular Retrato */
+@media (max-width: 767px) {
+
+    /* ================================
+    ROOT: =========================
+    =================================== */
+    
+    :root {
+    
+    /* ========================= 
+    --Tipografia--
+    ============================ */
+    --fs-h1: 30px;
+    --fs-h2: 25px;
+    --fs-h3: 22px;
+    --fs-h4: 20px;
+    --fs-h5: 18px;
+    --fs-h6: 16px;
+    --fs-p: 14px;
+    
+    /* ============================ 
+    --Espaçamentos-- 
+    =============================== */
+    --section-padding-top: 120px;
+    --section-padding-bottom: 120px;
+    --container-padding: 32px;
+    --padding-btn1: 55px 120px;
+    --padding-btn2: 55px 90px; 
+    --gap-12: 12px;
+    --gap-24: 24px;
+    --gap-nav: 150px;
+    
+    /* ============================ 
+    --Layout-- 
+    =============================== */
+    --h1-width: 50%;
+    --container-width: 360px;
+    }
+          
+    .container {
+        width: 100%;
+        max-width: 747px;
+        margin: 0 auto;
+    }
+            
+    .header {
+        padding: 35px;
+    }
+            
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+            
+    .logo {
+        font-size: 36px;
+    }
+            
+    .hero {
+        text-align: center;
+        height: 1200px;
+    }
+            
+    .hero-content {
+        width: 100%;
+        max-width: 747px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 70px;
+    }
+            
+    .hero-content h1 {
+        width: 100%;
+        margin: 0 auto;
+        font-size: var(--fs-h1);
+        line-height: 150%;
+    }
+            
+    .hero-content p {
+        width: 100%;
+        margin: 0 auto;
+        line-height: 200%;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+            
+    .cta-wrapper {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+    }
+            
+    .cta-btn {
+        padding: var(--padding-btn2);
+    }
+            
+    section {
+        padding-inline: 40px;
+    }
+            
+    h1,
+    h2,
+    p {
+        text-align: center;
+    }
+            
+    h1 {
+        font-size: 45px;
+        line-height: var(--lh-title);
+    }
+            
+    h2 {
+        font-size: 40px;
+        line-height: var(--lh-title);
+    }
+            
+    p {
+        font-size: 16px;
+        line-height: var(--lh-text);
+        text-align: left;
+    }
+            
+    .gallery-grid {
+        display: grid;
+        gap: 24px;
+    }
+    
+    .gallery-header p {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+            
+    .card-1,
+    .card-2,
+    .card-3 {
+        height: 463px;
+        overflow: hidden;
+        border-radius: var(--radius);
+        border: 1px solid (--border-primary);
+        background: linear-gradient(90deg, #071222 0%, #08162B 100%);
+    }
+            
+    .card-1,
+    .card-2 {
+        width: 100%;
+    }
+            
+    .card-3 {
+        width: 100%;
+    }
+            
+    .dual-wrapper {
+        display: flow;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 40px;
+    }
+            
+    .mini-card {
+        margin-bottom: 24px;
+        text-align: left;
+        padding: 60px;
+    }
+            
+    .image {
+        width: 100%;
+    }
+            
+    .cards-title {
+        margin-bottom: 40px;
+    }
+            
+    .feature-card {
+        display: block;
+        margin-bottom: 40px;
+        transition: all 0.2s ease;
+    }
+            
+    .image-card {
+        display: flex;
+    }
+            
+    .big-cta {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+            
+    .secondary-btn {
+        display: none;
+        padding: 55px;
+    }
+            
+    .secondary-btn2 {
+        padding: var(--padding-btn2);
+    }
+            
+    nav {
+        display: none;
+        gap: var(--gap-nav);
+    }
+            
+    .section-header {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .section-header h2 {
+        width: 100%;
+        font-size: 35px;
+        line-height: var(--lh-title);
+        text-align: center;
+    }
+            
+    .section-header p {
+        width: 100%;
+        text-align: center;
+    }
+            
+    .faq-wrapper {
+        display: flow;
+    }
+            
+    .faq-item {
+        width: 100%;
+    }
+            
+    .faq-suporte {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 24px;
+        height: 500px;
+        align-content: center;
+    }
+            
+    .about-card {
+        display: flow;
+        padding: 30px;
+        width: 100%;
+        text-align: left;
+        min-height: min-content;
+    }
+    
+    .about-image {
+        width: 100%;
+        height: 500px;
+        flex-shrink: 0;
+        margin-left: 0;
+        padding-bottom: 30px;
+      }
+      
+      .about-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: var(--radius);
+      }
+    
+    .about-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+      }
+     
+    .about-bg-text h2 {
+        font-size: 150px;
+        margin-top: 200px;
+    }
+            
+    .about-content {
+        width: 100%;
+        margin-left: 0;
+    }
+            
+    .footer {
+        display: table;
+    }
+            
+    p.text-footer {
+        font-size: 14px;
+    }
+
+    /* ============================ /* ============================ 
+/* ============================ /* ============================ 
+
+/* Celular Paisagem */
+@media (max-width: 880px) and (min-width: 768px) {
+
+    /* ================================
+    ROOT: =========================
+    =================================== */
+    
+    :root {
+    
+    /* ========================= 
+    --Tipografia--
+    ============================ */
+    --fs-h1: 35px;
+    --fs-h2: 30px;
+    --fs-h3: 26px;
+    --fs-h4: 24px;
+    --fs-h5: 22px;
+    --fs-h6: 20px;
+    --fs-p: 16px;
+    
+    /* ============================ 
+    --Espaçamentos-- 
+    =============================== */
+    --section-padding-top: 120px;
+    --section-padding-bottom: 120px;
+    --container-padding: 32px;
+    --padding-btn1: 50px 120px;
+    --padding-btn2: 45px 100px; 
+    --gap-12: 12px;
+    --gap-24: 24px;
+    --gap-nav: 150px;
+    
+    /* ============================ 
+    --Layout-- 
+    =============================== */
+    --h1-width: 50%;
+    --container-width: 1720px;
+    }
+
+}
+
+/* Tablet Retrato */
+@media (max-width: 1024px) and (min-width: 881px) {
+
+    /* ================================
+    ROOT: =========================
+    =================================== */
+    
+    :root {
+    
+    /* ========================= 
+    --Tipografia--
+    ============================ */
+    --fs-h1: 38px;
+    --fs-h2: 32px;
+    --fs-h3: 26px;
+    --fs-h4: 24px;
+    --fs-h5: 20px;
+    --fs-h6: 18px;
+    --fs-p: 16px;
+    
+    /* ============================ 
+    --Espaçamentos-- 
+    =============================== */
+    --section-padding-top: 120px;
+    --section-padding-bottom: 120px;
+    --container-padding: 32px;
+    --padding-btn1: 50px 120px;
+    --padding-btn2: 45px 100px; 
+    --gap-12: 12px;
+    --gap-24: 24px;
+    --gap-nav: 150px;
+    
+    /* ============================ 
+    --Layout-- 
+    =============================== */
+    --h1-width: 100%;
+    --container-width: 780px;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    .secondary-btn {
+        display: none;
+    }
+    
+    }
+
+    /* ============================ /* ============================ 
+/* ============================ /* ============================ 
+
+/* Tablet Paisagem */
+@media (max-width: 1200px) and (min-width: 1025px) {
+
+    /* ================================
+    ROOT: =========================
+    =================================== */
+    
+    :root {
+    
+    /* ========================= 
+    --Tipografia--
+    ============================ */
+    --fs-h1: 42px;
+    --fs-h2: 32px;
+    --fs-h3: 26px;
+    --fs-h4: 24px;
+    --fs-h5: 22px;
+    --fs-h6: 18px;
+    --fs-p: 16px;
+    
+    /* ============================ 
+    --Espaçamentos-- 
+    =============================== */
+    --section-padding-top: 120px;
+    --section-padding-bottom: 120px;
+    --container-padding: 32px;
+    --padding-btn1: 50px 120px;
+    --padding-btn2: 45px 100px; 
+    --gap-12: 12px;
+    --gap-24: 24px;
+    --gap-nav: 150px;
+    
+    /* ============================ 
+    --Layout-- 
+    =============================== */
+    --h1-width: 50%;
+    --container-width: 924px;
+    }
+    
+}
+
+/* ============================ /* ============================ 
+/* ============================ /* ============================ 
+
+/* Notebook/Laptop*/
+@media (max-width: 1366px) and (min-width: 1201px) {
+
+/* ================================
+ROOT: =========================
+=================================== */
+
+:root {
+
+/* ========================= 
+--Tipografia--
+============================ */
+--fs-h1: 40px;
+--fs-h2: 36px;
+--fs-h3: 28px;
+--fs-h4: 24px;
+--fs-h5: 22px;
+--fs-h6: 20px;
+--fs-p: 16px;
+
+/* ============================ 
+--Espaçamentos-- 
+=============================== */
+--section-padding-top: 120px;
+--section-padding-bottom: 120px;
+--container-padding: 32px;
+--padding-cta: 50px 80px;
+--padding-btn1: 50px 120px;
+--padding-btn2: 30px 60px; 
+--gap-12: 12px;
+--gap-24: 24px;
+--gap-nav: 70px;
+
+/* ============================ 
+--Layout-- 
+=============================== */
+--h1-width: 50%;
+--container-width: 1180px;
+}
+        
+.container {
+    width: var(--container-width);
+}
+        
+.hero-content h1 {
+    width: var(--h1-width);
+}
+        
+h1 {
+    font-size: 40px;
+    line-height: var(--lh-title);
+}
+        
+h2 {
+    font-size: 35px;
+    line-height: var(--lh-title);
+}
+
+p {
+    font-size: var(--fs-p);
+}
+        
+nav {
+    gap: var(--gap-nav);
+}
+
+.image-card {
+    width: 45%;
+}
+
+.feature-content {
+    padding: 60px;
+    gap: 0;
+}
+
+.gallery-header p {
+    margin: 0 auto;
+}
+
+.dual-wrapper {
+    display: flex;
+}
+        
+.about-bg-text h2 {
+    font-size: 250px;
+}
+        
+.about-wrapper {
+    gap: 60px;
+}
+        
+.about-bg-text {
+    margin-top: -240px;
+}
+        
+.about-content {
+    width: 50%;
+}
+        
+.cta-btn {
+    padding: var(--padding-cta);
+}
+        
+.secondary-btn {
+    padding: var(--padding-btn2);
+} 
+
+.whatsapp-float {
+    right: max(var(--container-padding), calc((100vw - 1240px) / 2 + var(--container-padding)));
+    bottom: 230px;
+}
+
+.tag {
+    padding: 25px 30px;
+    font-size: 16px;
+}
+
+.faq-lista {
+    width: 130%;
+}
+
+.faq-item {
+    width: 70%;
+    height: 20%;
+}
+
+.faq-suporte {
+    width: 115%;
+    margin-left: -65px;
+}
+
+}
+
+/* ============================ /* ============================ 
+/* ============================ /* ============================ 
+
+/* Desktop */ 
+
+/* ================================
+ROOT: =========================
+=================================== */
+:root {
+
+/* ========================= 
+--Tipografia--
+============================ */
+--fs-h1: 40px;
+--fs-h2: 33px;
+--fs-h3: 28px;
+--fs-h4: 26px;
+--fs-h5: 24px;
+--fs-h6: 22px;
+--fs-p: 20px;
+--lh-title: 180%;
+--lh-text: 200%;
+            
+/* ============================ 
+--Espaçamentos-- 
+=============================== */
+--section-padding-top: 120px;
+--section-padding-bottom: 120px;
+--padding-btn1: 45px 120px;
+--padding-btn2: 55px 100px; 
+--gap-12: 12px;
+--gap-24: 24px;
+--gap-nav: 150px;
+            
+/* ============================ 
+--Layout-- 
+=============================== */
+--h1-width: 40%;
+--container-width: 1720px;
+}
+            
+.hero-content {
+    width: 70%;
+}
+    
+.section-header p {
+    text-align: right;
+}
+            
+.feature-image,
+.feature-content,
+.mini-card,
+.image-card {
+    width: 100%;
+}
+            
+.gallery-header p {
+    margin: 0 auto;
+}
+            
+.whatsapp-float {
+    bottom: 230px;
+    right: max(var(--container-padding), calc((100vw - 1795px) / 2 + var(--container-padding)));
+}
+            
+.faq-item {
+    width: 81%;
+    height: 30%;
+}
+            
+.faq-suporte {
+    padding: 80px 60px;
+    height: 480px;
+    width: 156%;
+    margin-left: -236px;
+    display: grid;
+}
+
+/* ============================ /* ============================ 
+/* ============================ /* ============================ 
+
+/* Widescreen */
+@media (min-width: 2400px) {
+    .feature-content {
+        width: 45%;
+    }
+}
+
+}
